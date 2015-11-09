@@ -13,7 +13,7 @@ knit        : slidify::knit2slides
 
 ## Read-And-Delete
 
-```{r, echo=FALSE}
+```{r, echo=FALSE,fig.width= 14, fig.height=10}
 ggplot(dat, aes(x=total_hh,y=reorder(factor(general.village),total_hh)))+
   geom_point(aes(color=cp_id))+scale_color_brewer(palette="Dark2") + 
   geom_vline(xintercept = mean(dat$total_hh),color="red",linetype="longdash") +
