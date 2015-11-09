@@ -13,21 +13,6 @@ knit        : slidify::knit2slides
 
 ## Read-And-Delete
 
----
-title       : 
-subtitle    : 
-author      : 
-job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
----
-
-## Read-And-Delete
-
 ```{r, echo=FALSE}
 ggplot(dat, aes(x=total_hh,y=reorder(factor(general.village),total_hh)))+
   geom_point(aes(color=cp_id))+scale_color_brewer(palette="Dark2") + 
@@ -40,12 +25,7 @@ ggplot(dat, aes(x=total_hh,y=reorder(factor(general.village),total_hh)))+
   theme_bw() + theme(axis.text.y = element_text(size=rel(0.65))) 
 ```
 
---- .class #id 
 
-## Slide 2
---- .class #id 
-
-## Slide 2
 
 
 
